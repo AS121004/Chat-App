@@ -1,0 +1,85 @@
+.login-background {
+  /* background-color: #87ceeb; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* width: 600px; */
+  margin-left: 550px;
+  overflow: hidden;
+  position: relative;
+}
+
+.bubble {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: float 6s ease-in-out infinite;
+}
+
+.bubble:nth-child(2) {
+  width: 150px;
+  height: 150px;
+  animation-duration: 8s;
+  top: 10%;
+  left: 15%;
+}
+
+.bubble:nth-child(3) {
+  width: 120px;
+  height: 120px;
+  animation-duration: 10s;
+  top: 70%;
+  left: 75%;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.login-container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.login-container h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.btn-guest {
+  background-color: #bb5959;
+  color: white;
+}
+
+.btn-guest:hover {
+  background-color: #e60000;
+}
+
+.nav-tabs .nav-link {
+  cursor: pointer;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #e0f7fa;
+  color: #007bff;
+}
+
+.form-group {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
